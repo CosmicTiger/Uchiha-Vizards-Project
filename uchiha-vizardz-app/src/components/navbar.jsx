@@ -2,35 +2,40 @@ import React, { Component } from "react";
 
 const NavBar = ({ navbar }) => {
   return (
-    <nav className="navbar navbar-light bg-light">
-      <div className="container">
-        <div className="navbar-header">
-          <button
-            type="button"
-            className="navbar-toggle collapsed"
-            data-toggle="collapse"
-            data-target="#vizardz-navbar-collpase-1"
-            aria-expanded="false"
-          >
-            <span className="sr-only"> Toggle Navigation</span>
-            <span className="icon-bar" />
-            <span className="icon-bar" />
-            <span className="icon-bar" />
-          </button>
-          <a className="navbar-brand" href="header">
-            <img src="./images/vizardslogo.png" alt="vizardz_logo" />
-          </a>
-        </div>
+    <nav className="navbar navbar-default navbar-expand-lg navbar-light bg-light">
+      <a className="navbar-brand" href="#HOME">
+        <img src="./images/vizardslogo.png" alt="vizardz_logo" />
+      </a>
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerVizardz"
+        aria-controls="navbarTogglerVizardz"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span className="navbar-toggler-icon" />
+      </button>
 
-        <div className="collapse navbar-collapse" id="logo-navbar-collapse-1">
-          <ul className="nav navbar-nav navbar-right">
-            <li>
-              <a href="#HOME" className="nav-item">
-                HOME
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div className="collapse navbar-collapse" id="navbarTogglerVizardz">
+        <ul className="nav navbar-nav navbar-right">
+          <li className="nav-item active">
+            <a className="nav-link" href="#HOME">
+              Home <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#LEADER">
+              Leaderboard
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#CARDS">
+              Cartas mas buscadas
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
   );

@@ -1,13 +1,23 @@
-import React, { Component } from "react";
-import NavBar from "./components/navbar";
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import $ from "jquery";
+import Popper from "popper.js";
+import React, { Component } from "react";
+import Header from "./components/header";
+import Leaderboard from "./components/leaderboard";
+import Card from "./components/card";
+import Footer from "./components/footer";
+import "./App.css";
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <NavBar />
+        <Header />
+        <br />
+        <Leaderboard />
+        <br />
+        <Card />
+        <Footer />
       </React.Fragment>
     );
   }
